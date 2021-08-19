@@ -1,0 +1,17 @@
+{
+  "name": "smoketoken",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "adamdire",
+  "license": "MIT",
+  "devDependencies": {
+    "truffle": "^5.4.6"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.3.0"
+  }
+}
