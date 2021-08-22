@@ -1,0 +1,138 @@
+$ npm run deploy:rinkeby
+
+> smoketoken@1.0.0 deploy:rinkeby C:\Users\adamd\development\SmokeCoin\smart-contract
+> truffle migrate --reset --network rinkeby
+
+
+Compiling your contracts...
+===========================
+> Compiling @openzeppelin\contracts\access\AccessControl.sol
+> Compiling @openzeppelin\contracts\access\IAccessControl.sol
+> Compiling @openzeppelin\contracts\access\Ownable.sol
+> Compiling @openzeppelin\contracts\token\ERC20\ERC20.sol
+> Compiling @openzeppelin\contracts\token\ERC20\IERC20.sol
+> Compiling @openzeppelin\contracts\token\ERC20\extensions\IERC20Metadata.sol
+> Compiling @openzeppelin\contracts\utils\Context.sol
+> Compiling @openzeppelin\contracts\utils\Strings.sol
+> Compiling @openzeppelin\contracts\utils\introspection\ERC165.sol
+> Compiling @openzeppelin\contracts\utils\introspection\IERC165.sol
+> Compiling @openzeppelin\contracts\utils\math\SafeMath.sol
+> Compiling .\contracts\Migrations.sol
+> Compiling .\contracts\SmokeToken.sol
+> Artifacts written to C:\Users\adamd\development\SmokeCoin\smart-contract\build\contracts
+> Compiled successfully using:
+   - solc: 0.8.7+commit.e28d00a7.Emscripten.clang
+
+
+
+Migrations dry-run (simulation)
+===============================
+> Network name:    'rinkeby-fork'
+> Network id:      4
+> Block gas limit: 30000000 (0x1c9c380)
+
+
+1_initial_migration.js
+======================
+
+   Deploying 'Migrations'
+   ----------------------
+   > block number:        9162015
+   > block timestamp:     1629671116
+   > account:             0xEAb8cDC79B96003D69DdBae953Fed30bfA1190ac
+   > balance:             3.08947657
+   > gas used:            233854 (0x3917e)
+   > gas price:           45 gwei
+   > value sent:          0 ETH
+   > total cost:          0.01052343 ETH
+
+   -------------------------------------
+   > Total cost:          0.01052343 ETH
+
+
+2_deploy_contracts.js
+=====================
+
+   Deploying 'SmokeToken'
+   ----------------------
+   > block number:        9162017
+   > block timestamp:     1629671122
+   > account:             0xEAb8cDC79B96003D69DdBae953Fed30bfA1190ac
+   > balance:             2.966500705
+   > gas used:            2705284 (0x294784)
+   > gas price:           45 gwei
+   > value sent:          0 ETH
+   > total cost:          0.12173778 ETH
+
+   -------------------------------------
+   > Total cost:          0.12173778 ETH
+
+
+Summary
+=======
+> Total deployments:   2
+> Final cost:          0.13226121 ETH
+
+
+
+
+
+Starting migrations...
+======================
+> Network name:    'rinkeby'
+> Network id:      4
+> Block gas limit: 29970705 (0x1c95111)
+
+
+1_initial_migration.js
+======================
+
+   Deploying 'Migrations'
+   ----------------------
+   > transaction hash:    0x0edf384c931b2128d76ca02e04c338d79a3e986d743fc6418b40eebf4dc1ba12
+   > Blocks: 0            Seconds: 8
+   > contract address:    0x8E9A38B1de67DBFD808C57693F47f4b05Db5a572
+   > block number:        9162015
+   > block timestamp:     1629671134
+   > account:             0xEAb8cDC79B96003D69DdBae953Fed30bfA1190ac
+   > balance:             3.08874307
+   > gas used:            250154 (0x3d12a)
+   > gas price:           45 gwei
+   > value sent:          0 ETH
+   > total cost:          0.01125693 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:          0.01125693 ETH
+
+
+2_deploy_contracts.js
+=====================
+
+   Deploying 'SmokeToken'
+   ----------------------
+   > transaction hash:    0x76b251b6bfdc1076d6b99034c2e2591d2a1069174b768ad6bdedbe95921192b6
+   > Blocks: 0            Seconds: 12
+   > contract address:    0x9da94BD8fA7305305b38B3Bb6f4E843DF164be30
+   > block number:        9162017
+   > block timestamp:     1629671164
+   > account:             0xEAb8cDC79B96003D69DdBae953Fed30bfA1190ac
+   > balance:             2.962000705
+   > gas used:            2770584 (0x2a4698)
+   > gas price:           45 gwei
+   > value sent:          0 ETH
+   > total cost:          0.12467628 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:          0.12467628 ETH
+
+
+Summary
+=======
+> Total deployments:   2
+> Final cost:          0.13593321 ETH
