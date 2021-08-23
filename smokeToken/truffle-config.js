@@ -18,6 +18,12 @@ module.exports = {
       gas: 4500000,
       gasPrice: 45000000000,
     },
+    develop: {
+      host: "127.0.0.1",
+      port: 9545,
+      network_id: "*",
+      defaultEtherBalance: 500,
+    },
   },
 
   // Set default mocha options here, use special reporters etc.
