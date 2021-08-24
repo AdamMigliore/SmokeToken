@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "test",
-    "run:develop": "cross-env ENVIRONMENT=DEVELOPMENT node ./index.js",
-    "run": "cross-env ENVIRONMENT=PRODUCTION node ./index.js"
+    "oracle:develop": "cross-env ENVIRONMENT=DEVELOPMENT node ./index.js",
+    "oracle": "cross-env ENVIRONMENT=PRODUCTION node ./index.js"
   },
   "author": "adamdire",
   "license": "MIT",

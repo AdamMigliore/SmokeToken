@@ -1,4 +1,4 @@
-const { setOracle } = require("../scripts/setOracle");
+const { setOracle } = require("../functions/setOracle");
 const web3 = require("../config/initWeb3");
 const config = require("../config/config.json");
 const { abi } = require("../config/SmokeToken.json");

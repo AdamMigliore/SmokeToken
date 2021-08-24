@@ -5,7 +5,7 @@
   "main": "",
   "scripts": {
     "test": "cross-env ENVIRONMENT=DEVELOPMENT node test/setOracle.test.js",
-    "run:setOracle": "cross-env ENVIRONMENT=PRODUCTION node index.js"
+    "run:setOracle": "cross-env ENVIRONMENT=PRODUCTION node scripts/setOracle.js"
   },
   "author": "adamdire",
   "license": "MIT",
