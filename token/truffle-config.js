@@ -1,5 +1,5 @@
 const HDWalletProvider = require("@truffle/hdwallet-provider");
-const keys = require("./config/keys.json");
+const keys = require("../config/keys.json");
 
 module.exports = {
   networks: {

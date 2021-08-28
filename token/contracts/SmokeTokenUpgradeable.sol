@@ -3,21 +3,26 @@
 pragma solidity >=0.8.7;
 
 import "../node_modules/@openzeppelin/contracts/utils/math/SafeMath.sol";
-import "../node_modules/@openzeppelin/contracts/access/AccessControl.sol";
-import "../node_modules/@openzeppelin/contracts/token/ERC20/ERC20.sol";
+import "../node_modules/@openzeppelin/contracts-upgradeable/access/AccessControlUpgradeable.sol";
+import "../node_modules/@openzeppelin/contracts-upgradeable/token/ERC20/ERC20Upgradeable.sol";
+import "../node_modules/@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol";
 
 /// @title SmokeToken for a private discord group.
 /// @author adamdire
 /// @notice A token to use between friends as a meme / form of validation of our ranking.
-contract SmokeToken is ERC20, AccessControl {
+contract SmokeTokenUpgradeable is
+    Initializable,
+    ERC20Upgradeable,
+    AccessControlUpgradeable
+{
     using SafeMath for uint256;
 
     // Roles
     bytes32 public constant ORACLE = keccak256("ORACLE");
 
     //  Variables
-    uint256 private _mintAmount = 1092 * 10**decimals();
-    uint256 private _distributionAmount = 1092 * 10**decimals();
+    uint256 private _mintAmount;
+    uint256 private _distributionAmount;
     mapping(address => bool) private _hasGeneratedSmoke;
     address[] private _members;
 
@@ -26,7 +31,10 @@ contract SmokeToken is ERC20, AccessControl {
     event NewMember(address address_);
     event WooWednesday(uint256 timestamp, uint256 individualAmount);
 
-    constructor() ERC20("SmokeToken", "SMKE") {
+    function initialize() public initializer {
+        __ERC20_init("SmokeToken", "SMKE");
+        _mintAmount = 1092 * 10**decimals();
+        _distributionAmount = 1092 * 10**decimals();
         _setupRole(DEFAULT_ADMIN_ROLE, msg.sender);
     }
 

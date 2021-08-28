@@ -135,4 +135,38 @@ describe("SmokeToken", () => {
       "Error: Only the owner can set the mint amount."
     );
   });
+
+  it("can set the distribution amount.", async () => {
+    const distribution = new BN("1");
+
+    await this.smokeToken.setDistributionAmount(distribution, { from: owner });
+
+    expect(await this.smokeToken.getDistributionAmount()).to.be.bignumber.equal(
+      distribution
+    );
+  });
+
+  it("can set the distribution amount only by the owner.", async () => {
+    const distribution = new BN("1");
+
+    await expectRevert(
+      this.smokeToken.setDistributionAmount(distribution, { from: member1 }),
+      "Error: Only the owner can set the distribution amount."
+    );
+  });
+
+  it("can return the number of members.", async () => {
+    await this.smokeToken.generateSmoke({ from: owner });
+
+    expect(await this.smokeToken.membersCount()).to.be.bignumber.equal(
+      new BN("1")
+    );
+  });
+
+  it("can check if a member has already generated smoke", async () => {
+    await this.smokeToken.generateSmoke({ from: owner });
+
+    expect(await this.smokeToken.hasGeneratedSmoke(owner, { from: owner })).to
+      .be.true;
+  });
 });

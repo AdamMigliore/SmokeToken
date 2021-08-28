@@ -1,0 +1,200 @@
+
+Compiling your contracts...
+===========================
+> Compiling .\contracts\Migrations.sol
+> Compiling .\contracts\SmokeToken.sol
+> Compiling .\contracts\SmokeTokenUpgradeable.sol
+> Compiling .\node_modules\@openzeppelin\contracts-upgradeable\access\AccessControlUpgradeable.sol
+> Compiling .\node_modules\@openzeppelin\contracts-upgradeable\access\IAccessControlUpgradeable.sol
+> Compiling .\node_modules\@openzeppelin\contracts-upgradeable\proxy\utils\Initializable.sol
+> Compiling .\node_modules\@openzeppelin\contracts-upgradeable\token\ERC20\ERC20Upgradeable.sol
+> Compiling .\node_modules\@openzeppelin\contracts-upgradeable\token\ERC20\IERC20Upgradeable.sol
+> Compiling .\node_modules\@openzeppelin\contracts-upgradeable\token\ERC20\extensions\IERC20MetadataUpgradeable.sol
+> Compiling .\node_modules\@openzeppelin\contracts-upgradeable\utils\ContextUpgradeable.sol
+> Compiling .\node_modules\@openzeppelin\contracts-upgradeable\utils\StringsUpgradeable.sol
+> Compiling .\node_modules\@openzeppelin\contracts-upgradeable\utils\introspection\ERC165Upgradeable.sol
+> Compiling .\node_modules\@openzeppelin\contracts-upgradeable\utils\introspection\IERC165Upgradeable.sol
+> Compiling .\node_modules\@openzeppelin\contracts\access\AccessControl.sol
+> Compiling .\node_modules\@openzeppelin\contracts\access\IAccessControl.sol
+> Compiling .\node_modules\@openzeppelin\contracts\token\ERC20\ERC20.sol
+> Compiling .\node_modules\@openzeppelin\contracts\token\ERC20\IERC20.sol
+> Compiling .\node_modules\@openzeppelin\contracts\token\ERC20\extensions\IERC20Metadata.sol
+> Compiling .\node_modules\@openzeppelin\contracts\utils\Context.sol
+> Compiling .\node_modules\@openzeppelin\contracts\utils\Strings.sol
+> Compiling .\node_modules\@openzeppelin\contracts\utils\introspection\ERC165.sol
+> Compiling .\node_modules\@openzeppelin\contracts\utils\introspection\IERC165.sol
+> Compiling .\node_modules\@openzeppelin\contracts\utils\math\SafeMath.sol
+> Artifacts written to C:\Users\adamd\development\SmokeCoin\token\build\contracts
+> Compiled successfully using:
+   - solc: 0.8.7+commit.e28d00a7.Emscripten.clang
+
+
+
+Migrations dry-run (simulation)
+===============================
+> Network name:    'rinkeby-fork'
+> Network id:      4
+> Block gas limit: 29999887 (0x1c9c30f)
+
+
+1_initial_migration.js
+======================
+
+   Deploying 'Migrations'
+   ----------------------
+   > block number:        9195690
+   > block timestamp:     1630177307
+   > account:             0xEAb8cDC79B96003D69DdBae953Fed30bfA1190ac
+   > balance:             21.70012899599896612
+   > gas used:            233854 (0x3917e)
+   > gas price:           45 gwei
+   > value sent:          0 ETH
+   > total cost:          0.01052343 ETH
+
+   -------------------------------------
+   > Total cost:          0.01052343 ETH
+
+
+2_deploy_upgradeable_SmokeToken.js
+==================================
+
+   Deploying 'SmokeTokenUpgradeable'
+   ---------------------------------
+   > block number:        9195692
+   > block timestamp:     1630177310
+   > account:             0xEAb8cDC79B96003D69DdBae953Fed30bfA1190ac
+   > balance:             21.55570590599896612
+   > gas used:            3181889 (0x308d41)
+   > gas price:           45 gwei
+   > value sent:          0 ETH
+   > total cost:          0.143185005 ETH
+
+
+   Deploying 'ProxyAdmin'
+   ----------------------
+   > block number:        9195693
+   > block timestamp:     1630177312
+   > account:             0xEAb8cDC79B96003D69DdBae953Fed30bfA1190ac
+   > balance:             21.53465850599896612
+   > gas used:            467720 (0x72308)
+   > gas price:           45 gwei
+   > value sent:          0 ETH
+   > total cost:          0.0210474 ETH
+
+
+   Deploying 'TransparentUpgradeableProxy'
+   ---------------------------------------
+   > block number:        9195694
+   > block timestamp:     1630177321
+   > account:             0xEAb8cDC79B96003D69DdBae953Fed30bfA1190ac
+   > balance:             21.50705024099896612
+   > gas used:            613517 (0x95c8d)
+   > gas price:           45 gwei
+   > value sent:          0 ETH
+   > total cost:          0.027608265 ETH
+
+   -------------------------------------
+   > Total cost:          0.19184067 ETH
+
+
+Summary
+=======
+> Total deployments:   4
+> Final cost:          0.2023641 ETH
+
+
+
+
+
+Starting migrations...
+======================
+> Network name:    'rinkeby'
+> Network id:      4
+> Block gas limit: 29999859 (0x1c9c2f3)
+
+
+1_initial_migration.js
+======================
+
+   Deploying 'Migrations'
+   ----------------------
+   > transaction hash:    0x99771cc016e0290d0d1a4f1d2c5c402603c51ba08be6e97856b2c635a7df9b3c
+   > Blocks: 0            Seconds: 8
+   > contract address:    0x4369eADB4103b9Feb60eF48A46E1F76Ef7Dd9732
+   > block number:        9195691
+   > block timestamp:     1630177336
+   > account:             0xEAb8cDC79B96003D69DdBae953Fed30bfA1190ac
+   > balance:             21.69939549599896612
+   > gas used:            250154 (0x3d12a)
+   > gas price:           45 gwei
+   > value sent:          0 ETH
+   > total cost:          0.01125693 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:          0.01125693 ETH
+
+
+2_deploy_upgradeable_SmokeToken.js
+==================================
+
+   Deploying 'SmokeTokenUpgradeable'
+   ---------------------------------
+   > transaction hash:    0x7ccf6a068f4ada3e33f7a74e4d836c315968dc4e0f184832240dc46618d8d5f3
+   > Blocks: 0            Seconds: 12
+   > contract address:    0x356BF3456e89a7059cb3F6BfE566fcE1B9F253b5
+   > block number:        9195693
+   > block timestamp:     1630177366
+   > account:             0xEAb8cDC79B96003D69DdBae953Fed30bfA1190ac
+   > balance:             21.55414440599896612
+   > gas used:            3181889 (0x308d41)
+   > gas price:           45 gwei
+   > value sent:          0 ETH
+   > total cost:          0.143185005 ETH
+
+
+   Deploying 'ProxyAdmin'
+   ----------------------
+   > transaction hash:    0x6b18bd22137a0aba6b305e7aa0045a5ac75776a5b168217a65dbf492b7e00c35
+   > Blocks: 0            Seconds: 12
+   > contract address:    0x5ff507fbf9EF887bfa9fa7F83Eca2Db898b23758
+   > block number:        9195694
+   > block timestamp:     1630177381
+   > account:             0xEAb8cDC79B96003D69DdBae953Fed30bfA1190ac
+   > balance:             21.53236350599896612
+   > gas used:            484020 (0x762b4)
+   > gas price:           45 gwei
+   > value sent:          0 ETH
+   > total cost:          0.0217809 ETH
+
+
+   Deploying 'TransparentUpgradeableProxy'
+   ---------------------------------------
+   > transaction hash:    0x80ce088ce65078d96a50b9e204f7da0ac4c51866927bab678f6b8edc58537df9
+   > Blocks: 1            Seconds: 12
+   > contract address:    0x45d6F8c1163025d09Ab5f0F67f8ff41DFD083d64
+   > block number:        9195695
+   > block timestamp:     1630177396
+   > account:             0xEAb8cDC79B96003D69DdBae953Fed30bfA1190ac
+   > balance:             21.49925624099896612
+   > gas used:            735717 (0xb39e5)
+   > gas price:           45 gwei
+   > value sent:          0 ETH
+   > total cost:          0.033107265 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:          0.19807317 ETH
+
+
+Summary
+=======
+> Total deployments:   4
+> Final cost:          0.2093301 ETH
+
+
+
