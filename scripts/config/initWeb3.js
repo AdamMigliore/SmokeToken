@@ -1,7 +1,7 @@
 const Web3 = require("web3");
 const Provider = require("@truffle/hdwallet-provider");
-const config = require("./config.json");
-const keys = require("./keys.json");
+const config = require("../../config/config.json");
+const keys = require("../../config/keys.json");
 let url = `https://rinkeby.infura.io/v3/${keys.infura.projectId}`;
 let privateKey = keys.rinkeby.privateKey;
 if (process.env.ENVIRONMENT === "DEVELOPMENT") {
