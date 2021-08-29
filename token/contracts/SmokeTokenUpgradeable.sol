@@ -32,6 +32,7 @@ contract SmokeTokenUpgradeable is
     event WooWednesday(uint256 timestamp, uint256 individualAmount);
 
     function initialize() public initializer {
+        __AccessControl_init();
         __ERC20_init("SmokeToken", "SMKE");
         _mintAmount = 1092 * 10**decimals();
         _distributionAmount = 1092 * 10**decimals();

@@ -1,4 +1,5 @@
 const { deployProxy } = require("@openzeppelin/truffle-upgrades");
+const keys = require("../../config/keys.json");
 
 const SmokeTokenUpgradeable = artifacts.require("SmokeTokenUpgradeable.sol");
 
