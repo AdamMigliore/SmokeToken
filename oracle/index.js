@@ -1,8 +1,8 @@
 const Web3 = require("web3");
 const Provider = require("@truffle/hdwallet-provider");
-const keys = require("./config/keys.json");
-const config = require("./config/config.json");
-const { abi } = require("./SmokeToken.json");
+const keys = require("../config/keys.json");
+const config = require("../config/config.json");
+const { abi } = require("../config/SmokeToken.json");
 const { isDevelopment } = require("./utils/utils");
 
 let web3;
@@ -19,10 +19,7 @@ if (isDevelopment()) {
   web3 = new Web3(provider);
 }
 
-const smokeToken = new web3.eth.Contract(
-  abi,
-  config.SmokeToken.contractAddress
-);
+const smokeToken = new web3.eth.Contract(abi, config.SmokeToken.address);
 
 async function wooWednesday() {
   const today = new Date();
