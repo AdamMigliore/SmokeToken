@@ -6,6 +6,8 @@ import reportWebVitals from "./reportWebVitals";
 import { Web3ReactProvider } from "@web3-react/core";
 import Web3 from "web3";
 import { QueryClient, QueryClientProvider } from "react-query";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const queryClient = new QueryClient();
 
@@ -19,6 +21,7 @@ ReactDOM.render(
     <QueryClientProvider client={queryClient}>
       <Web3ReactProvider getLibrary={getLibrary}>
         <App />
+        <ToastContainer />
       </Web3ReactProvider>
     </QueryClientProvider>
   </React.StrictMode>,

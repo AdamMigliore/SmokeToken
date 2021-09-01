@@ -5,11 +5,11 @@ import clsx from "clsx";
 
 interface Props extends CardProps {}
 
-const ActionArea: React.FC<Props> = (props) => {
+const ActionArea: React.FC<Props> = ({ className, children, ...rest }) => {
   const classes = useStyles();
   return (
-    <Card className={clsx(classes.actionArea, props.className)} {...props}>
-      {props.children}
+    <Card className={clsx(classes.actionArea, className)} {...rest}>
+      {children}
     </Card>
   );
 };

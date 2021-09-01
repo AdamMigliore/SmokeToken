@@ -52,6 +52,9 @@ const useStyles = makeStyles({
   buttonContainer: {
     width: "35% !important",
   },
+  buttonWidth: {
+    width: "100%",
+  },
   actionAreaSpacing: {
     height: "50px",
   },

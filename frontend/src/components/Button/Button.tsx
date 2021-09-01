@@ -5,16 +5,16 @@ import clsx from "clsx";
 
 interface Props extends ButtonProps {}
 
-const Button: React.FC<Props> = (props) => {
+const Button: React.FC<Props> = ({ className, children, ...rest }) => {
   const classes = useStyles();
   return (
     <MaterialButton
       disableElevation
-      className={clsx(classes.button)}
+      className={clsx(classes.button, className)}
       variant="contained"
-      {...props}
+      {...rest}
     >
-      {props.children}
+      {children}
     </MaterialButton>
   );
 };

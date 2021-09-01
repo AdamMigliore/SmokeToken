@@ -1,9 +1,0 @@
-{
-  "rinkeby": {
-    "address": "0xEAb8cDC79B96003D69DdBae953Fed30bfA1190ac",
-    "privateKey": "d01fd72efe0d523b5e5e277d539dc59020d3d1407aeb5f9f37043e7f6d40208e"
-  },
-  "infura": {
-    "projectId": "7229a83a308c43a79abbd1b39203ec7d"
-  }
-}

@@ -7,20 +7,21 @@ import Grid from "@material-ui/core/Grid";
 
 interface Props extends ModalProps {}
 
-const Modal: React.FC<Props> = (props) => {
+const Modal: React.FC<Props> = ({ children, onClose, className, ...rest }) => {
   const classes = useStyles();
   return (
-    <MaterialModal {...props}>
+    <MaterialModal
+      onClose={onClose}
+      className={clsx(classes.center, className)}
+      {...rest}
+    >
       <Grid
         container
-        className={clsx(classes.gridContainer)}
         direction="column"
         alignItems="center"
         justifyContent="center"
       >
-        <ActionArea className={clsx(classes.actionArea)}>
-          {props.children}
-        </ActionArea>
+        <ActionArea className={clsx(classes.actionArea)}>{children}</ActionArea>
       </Grid>
     </MaterialModal>
   );
