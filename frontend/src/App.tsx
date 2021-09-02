@@ -142,15 +142,6 @@ function App() {
     } catch (error) {}
   };
 
-  const generateSmoke = async () => {
-    try {
-      await SmokeTokenInstance?.methods.generateSmoke().send({ from: account });
-      queryClient.invalidateQueries("BALANCE");
-    } catch (err) {
-      console.log(err);
-    }
-  };
-
   const onGenerateSmokeClick = async () => {
     try {
       await generateSmoke();
@@ -162,6 +153,16 @@ function App() {
         "There was an error while generating smoke... 🙃",
         toastOptions
       );
+    }
+  };
+
+  //  SmokeToken Methods
+  const generateSmoke = async () => {
+    try {
+      await SmokeTokenInstance?.methods.generateSmoke().send({ from: account });
+      queryClient.invalidateQueries("BALANCE");
+    } catch (err) {
+      console.log(err);
     }
   };
 
