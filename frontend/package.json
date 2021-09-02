@@ -34,7 +34,8 @@
     "start": "cross-env react-scripts start",
     "build": "cross-env react-scripts build",
     "test": "cross-env react-scripts test",
-    "eject": "cross-env react-scripts eject"
+    "eject": "cross-env react-scripts eject",
+    "serve": "cross-env NODE_ENV=production serve -s build"
   },
   "eslintConfig": {
     "extends": [
