@@ -8,8 +8,6 @@ import Button from "./components/Button/Button";
 import Tooltip from "@material-ui/core/Tooltip";
 import { useWeb3React } from "@web3-react/core";
 import Web3 from "web3";
-import { SmokeToken, localBlockchain } from "./config/config.json";
-import { abi } from "./config/SmokeToken.json";
 import { injected } from "./config/connector";
 import { AbiItem } from "web3-utils";
 import { useQuery, useQueryClient } from "react-query";
@@ -18,6 +16,12 @@ import WooModal from "./components/WooModal/WooModal";
 import BN from "bn.js";
 import SendModal from "./components/SendModal/SendModal";
 import { toast, ToastOptions } from "react-toastify";
+import {
+  CONTRACT_ADDRESS,
+  ABI,
+  CHAIN_ID,
+  SMOKE_TOKEN_METADATA,
+} from "./config/config";
 
 const toastOptions: ToastOptions = {
   position: "top-center",
@@ -55,11 +59,10 @@ function App() {
     connector?.getProvider().then((provider) => {
       // Instantiate web3.js
       const instance = new Web3(provider);
-      const address =
-        process.env.NODE_ENV === "development"
-          ? localBlockchain.contractAddress
-          : SmokeToken.address;
-      const token = new instance!.eth.Contract(abi as AbiItem[], address);
+      const token = new instance!.eth.Contract(
+        ABI as AbiItem[],
+        CONTRACT_ADDRESS
+      );
       setSmokeTokenInstance(token);
       setWeb3Instance(instance);
     });
@@ -82,11 +85,7 @@ function App() {
   }, [web3]);
 
   useEffect(() => {
-    if (process.env.NODE_ENV === "development") {
-      setIsRinkeby(chainId === 1337);
-    } else {
-      setIsRinkeby(chainId === 4);
-    }
+    setIsRinkeby(chainId === CHAIN_ID);
   }, [chainId]);
 
   useEffect(() => {
@@ -122,7 +121,10 @@ function App() {
     try {
       await activate(injected);
     } catch (err) {
-      console.log(err);
+      toast.error(
+        "There was an error while enabling MetaMask... 🙃",
+        toastOptions
+      );
     }
   };
 
@@ -133,11 +135,7 @@ function App() {
         params: {
           type: "ERC20",
           options: {
-            ...SmokeToken,
-            address:
-              process.env.NODE_ENV === "production"
-                ? SmokeToken.address
-                : localBlockchain.contractAddress,
+            ...SMOKE_TOKEN_METADATA,
           },
         },
       });
