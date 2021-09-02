@@ -16225,42 +16225,18 @@
   "ast": {
     "absolutePath": "project:/contracts/SmokeTokenUpgradeable.sol",
     "exportedSymbols": {
-      "AccessControlUpgradeable": [
-        1070
-      ],
-      "ContextUpgradeable": [
-        1909
-      ],
-      "ERC165Upgradeable": [
-        2158
-      ],
-      "ERC20Upgradeable": [
-        1762
-      ],
-      "IAccessControlUpgradeable": [
-        1143
-      ],
-      "IERC165Upgradeable": [
-        2170
-      ],
-      "IERC20MetadataUpgradeable": [
-        1865
-      ],
-      "IERC20Upgradeable": [
-        1840
-      ],
-      "Initializable": [
-        1189
-      ],
-      "SafeMath": [
-        3772
-      ],
-      "SmokeTokenUpgradeable": [
-        735
-      ],
-      "StringsUpgradeable": [
-        2112
-      ]
+      "AccessControlUpgradeable": [1070],
+      "ContextUpgradeable": [1909],
+      "ERC165Upgradeable": [2158],
+      "ERC20Upgradeable": [1762],
+      "IAccessControlUpgradeable": [1143],
+      "IERC165Upgradeable": [2170],
+      "IERC20MetadataUpgradeable": [1865],
+      "IERC20Upgradeable": [1840],
+      "Initializable": [1189],
+      "SafeMath": [3772],
+      "SmokeTokenUpgradeable": [735],
+      "StringsUpgradeable": [2112]
     },
     "id": 736,
     "license": "MIT",
@@ -16268,12 +16244,7 @@
     "nodes": [
       {
         "id": 378,
-        "literals": [
-          "solidity",
-          ">=",
-          "0.8",
-          ".7"
-        ],
+        "literals": ["solidity", ">=", "0.8", ".7"],
         "nodeType": "PragmaDirective",
         "src": "64:24:2"
       },
@@ -16376,16 +16347,7 @@
         "fullyImplemented": true,
         "id": 735,
         "linearizedBaseContracts": [
-          735,
-          1070,
-          2158,
-          2170,
-          1143,
-          1762,
-          1865,
-          1840,
-          1909,
-          1189
+          735, 1070, 2158, 2170, 1143, 1762, 1865, 1840, 1909, 1189
         ],
         "name": "SmokeTokenUpgradeable",
         "nameLocation": "631:21:2",
@@ -17424,10 +17386,7 @@
                       "id": 465,
                       "name": "require",
                       "nodeType": "Identifier",
-                      "overloadedDeclarations": [
-                        4294967278,
-                        4294967278
-                      ],
+                      "overloadedDeclarations": [4294967278, 4294967278],
                       "referencedDeclaration": 4294967278,
                       "src": "1548:7:2",
                       "typeDescriptions": {
@@ -17931,10 +17890,7 @@
                       "id": 505,
                       "name": "require",
                       "nodeType": "Identifier",
-                      "overloadedDeclarations": [
-                        4294967278,
-                        4294967278
-                      ],
+                      "overloadedDeclarations": [4294967278, 4294967278],
                       "referencedDeclaration": 4294967278,
                       "src": "1904:7:2",
                       "typeDescriptions": {
@@ -18045,9 +18001,7 @@
                   "src": "2034:25:2"
                 },
                 {
-                  "assignments": [
-                    522
-                  ],
+                  "assignments": [522],
                   "declarations": [
                     {
                       "constant": false,
@@ -18471,9 +18425,7 @@
                   },
                   "id": 566,
                   "initializationExpression": {
-                    "assignments": [
-                      544
-                    ],
+                    "assignments": [544],
                     "declarations": [
                       {
                         "constant": false,
@@ -18881,10 +18833,7 @@
                       "id": 577,
                       "name": "require",
                       "nodeType": "Identifier",
-                      "overloadedDeclarations": [
-                        4294967278,
-                        4294967278
-                      ],
+                      "overloadedDeclarations": [4294967278, 4294967278],
                       "referencedDeclaration": 4294967278,
                       "src": "2496:7:2",
                       "typeDescriptions": {
@@ -18912,9 +18861,7 @@
                   "src": "2496:124:2"
                 },
                 {
-                  "assignments": [
-                    587
-                  ],
+                  "assignments": [587],
                   "declarations": [
                     {
                       "constant": false,
@@ -19338,9 +19285,7 @@
                   },
                   "id": 631,
                   "initializationExpression": {
-                    "assignments": [
-                      609
-                    ],
+                    "assignments": [609],
                     "declarations": [
                       {
                         "constant": false,
@@ -19720,10 +19665,7 @@
                       "id": 644,
                       "name": "require",
                       "nodeType": "Identifier",
-                      "overloadedDeclarations": [
-                        4294967278,
-                        4294967278
-                      ],
+                      "overloadedDeclarations": [4294967278, 4294967278],
                       "referencedDeclaration": 4294967278,
                       "src": "3125:7:2",
                       "typeDescriptions": {
@@ -20047,10 +19989,7 @@
                       "id": 671,
                       "name": "require",
                       "nodeType": "Identifier",
-                      "overloadedDeclarations": [
-                        4294967278,
-                        4294967278
-                      ],
+                      "overloadedDeclarations": [4294967278, 4294967278],
                       "referencedDeclaration": 4294967278,
                       "src": "3494:7:2",
                       "typeDescriptions": {
@@ -20374,10 +20313,7 @@
                       "id": 698,
                       "name": "require",
                       "nodeType": "Identifier",
-                      "overloadedDeclarations": [
-                        4294967278,
-                        4294967278
-                      ],
+                      "overloadedDeclarations": [4294967278, 4294967278],
                       "referencedDeclaration": 4294967278,
                       "src": "3880:7:2",
                       "typeDescriptions": {
@@ -20769,42 +20705,18 @@
   "legacyAST": {
     "absolutePath": "project:/contracts/SmokeTokenUpgradeable.sol",
     "exportedSymbols": {
-      "AccessControlUpgradeable": [
-        1070
-      ],
-      "ContextUpgradeable": [
-        1909
-      ],
-      "ERC165Upgradeable": [
-        2158
-      ],
-      "ERC20Upgradeable": [
-        1762
-      ],
-      "IAccessControlUpgradeable": [
-        1143
-      ],
-      "IERC165Upgradeable": [
-        2170
-      ],
-      "IERC20MetadataUpgradeable": [
-        1865
-      ],
-      "IERC20Upgradeable": [
-        1840
-      ],
-      "Initializable": [
-        1189
-      ],
-      "SafeMath": [
-        3772
-      ],
-      "SmokeTokenUpgradeable": [
-        735
-      ],
-      "StringsUpgradeable": [
-        2112
-      ]
+      "AccessControlUpgradeable": [1070],
+      "ContextUpgradeable": [1909],
+      "ERC165Upgradeable": [2158],
+      "ERC20Upgradeable": [1762],
+      "IAccessControlUpgradeable": [1143],
+      "IERC165Upgradeable": [2170],
+      "IERC20MetadataUpgradeable": [1865],
+      "IERC20Upgradeable": [1840],
+      "Initializable": [1189],
+      "SafeMath": [3772],
+      "SmokeTokenUpgradeable": [735],
+      "StringsUpgradeable": [2112]
     },
     "id": 736,
     "license": "MIT",
@@ -20812,12 +20724,7 @@
     "nodes": [
       {
         "id": 378,
-        "literals": [
-          "solidity",
-          ">=",
-          "0.8",
-          ".7"
-        ],
+        "literals": ["solidity", ">=", "0.8", ".7"],
         "nodeType": "PragmaDirective",
         "src": "64:24:2"
       },
@@ -20920,16 +20827,7 @@
         "fullyImplemented": true,
         "id": 735,
         "linearizedBaseContracts": [
-          735,
-          1070,
-          2158,
-          2170,
-          1143,
-          1762,
-          1865,
-          1840,
-          1909,
-          1189
+          735, 1070, 2158, 2170, 1143, 1762, 1865, 1840, 1909, 1189
         ],
         "name": "SmokeTokenUpgradeable",
         "nameLocation": "631:21:2",
@@ -21968,10 +21866,7 @@
                       "id": 465,
                       "name": "require",
                       "nodeType": "Identifier",
-                      "overloadedDeclarations": [
-                        4294967278,
-                        4294967278
-                      ],
+                      "overloadedDeclarations": [4294967278, 4294967278],
                       "referencedDeclaration": 4294967278,
                       "src": "1548:7:2",
                       "typeDescriptions": {
@@ -22475,10 +22370,7 @@
                       "id": 505,
                       "name": "require",
                       "nodeType": "Identifier",
-                      "overloadedDeclarations": [
-                        4294967278,
-                        4294967278
-                      ],
+                      "overloadedDeclarations": [4294967278, 4294967278],
                       "referencedDeclaration": 4294967278,
                       "src": "1904:7:2",
                       "typeDescriptions": {
@@ -22589,9 +22481,7 @@
                   "src": "2034:25:2"
                 },
                 {
-                  "assignments": [
-                    522
-                  ],
+                  "assignments": [522],
                   "declarations": [
                     {
                       "constant": false,
@@ -23015,9 +22905,7 @@
                   },
                   "id": 566,
                   "initializationExpression": {
-                    "assignments": [
-                      544
-                    ],
+                    "assignments": [544],
                     "declarations": [
                       {
                         "constant": false,
@@ -23425,10 +23313,7 @@
                       "id": 577,
                       "name": "require",
                       "nodeType": "Identifier",
-                      "overloadedDeclarations": [
-                        4294967278,
-                        4294967278
-                      ],
+                      "overloadedDeclarations": [4294967278, 4294967278],
                       "referencedDeclaration": 4294967278,
                       "src": "2496:7:2",
                       "typeDescriptions": {
@@ -23456,9 +23341,7 @@
                   "src": "2496:124:2"
                 },
                 {
-                  "assignments": [
-                    587
-                  ],
+                  "assignments": [587],
                   "declarations": [
                     {
                       "constant": false,
@@ -23882,9 +23765,7 @@
                   },
                   "id": 631,
                   "initializationExpression": {
-                    "assignments": [
-                      609
-                    ],
+                    "assignments": [609],
                     "declarations": [
                       {
                         "constant": false,
@@ -24264,10 +24145,7 @@
                       "id": 644,
                       "name": "require",
                       "nodeType": "Identifier",
-                      "overloadedDeclarations": [
-                        4294967278,
-                        4294967278
-                      ],
+                      "overloadedDeclarations": [4294967278, 4294967278],
                       "referencedDeclaration": 4294967278,
                       "src": "3125:7:2",
                       "typeDescriptions": {
@@ -24591,10 +24469,7 @@
                       "id": 671,
                       "name": "require",
                       "nodeType": "Identifier",
-                      "overloadedDeclarations": [
-                        4294967278,
-                        4294967278
-                      ],
+                      "overloadedDeclarations": [4294967278, 4294967278],
                       "referencedDeclaration": 4294967278,
                       "src": "3494:7:2",
                       "typeDescriptions": {
@@ -24918,10 +24793,7 @@
                       "id": 698,
                       "name": "require",
                       "nodeType": "Identifier",
-                      "overloadedDeclarations": [
-                        4294967278,
-                        4294967278
-                      ],
+                      "overloadedDeclarations": [4294967278, 4294967278],
                       "referencedDeclaration": 4294967278,
                       "src": "3880:7:2",
                       "typeDescriptions": {
@@ -25318,12 +25190,18 @@
     "4": {
       "events": {},
       "links": {},
-      "address": "0xaB61090ddeEA30b5Ed4508d1fe1a94cC942234F7",
-      "transactionHash": "0x0d86548936a7c7cecd777cc911f0357968841f376401514352087c8022711526"
+      "address": "0x9fcc2823D56A95Bb04D5C0fb023Fe20c019F451f",
+      "transactionHash": "0x1bc2e58b6864ae81a63dcbd58484b5b8aae7faee0b26eeb3d867c640557b851c"
+    },
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0xfDF9F2Eb219872EB8fD5147bbCA1829a78dd8647",
+      "transactionHash": "0x635d686eeb94f39501662fd1320ea9ec484c127dd7842fb048ef9ae38cf41014"
     }
   },
   "schemaVersion": "3.4.3",
-  "updatedAt": "2021-08-29T13:28:17.545Z",
+  "updatedAt": "2021-09-02T00:22:19.319Z",
   "networkType": "ethereum",
   "devdoc": {
     "author": "adamdire",
